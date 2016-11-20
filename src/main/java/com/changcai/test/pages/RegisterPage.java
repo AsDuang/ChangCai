@@ -17,6 +17,9 @@ public class RegisterPage {
 		driver.get(url);
 		PageFactory.initElements(driver, this);
 	}
+	public String getUrl() {
+		return url;
+	}
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -69,6 +72,10 @@ public class RegisterPage {
 		txt_ensurePwd.sendKeys(ensurePwd);
 		ins_check.click();
 		btn_Register.click();
+	}
+	
+	public void registerAction(String mobile,String password) {
+		//TODO
 	}
 	
 }
