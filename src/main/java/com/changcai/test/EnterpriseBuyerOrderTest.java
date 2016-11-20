@@ -9,6 +9,11 @@ public class EnterpriseBuyerOrderTest {
 		//TODO
 	}
 	
+	@BeforeMethod
+	public void openOrderPage() {
+		//TODO
+	}
+	
 	/*
 	 * 企业管理员买家操作
 	 */
@@ -49,15 +54,38 @@ public class EnterpriseBuyerOrderTest {
 	}
 	
 	/*
+	 * 认证企业的交易员进行买家订单操作
+	 */
+	
+	@Test
+	//认证企业的交易员买家 -- 确认下单
+	public void createOrderviaVerifiedEnterDealerBuyer() {
+		//TODO
+	}
+
+	
+	/*
 	 * 认证企业的业务员进行买家订单操作
 	 */
 	@Test
 	//认证企业的业务员买家 -- 确认下单
-	public void createOrderVerifiedEnterSalorBuyer() {
-		
+	public void createOrderviaVerifiedEnterSalorBuyer() {
+		//TODO
 	}
 	
+	/*
+	 * 认证企业的财务员进行买家订单操作
+	 */
+	@Test
+	//认证企业的财务员买家 -- 确认下单
+	public void createOrderVerifiedEnterTreasurerBuyer() {
+		//TODO
+	}
 	
+	@AfterMethod
+	public void backTo() {
+		//TODO
+	}
 	
 	@AfterClass
 	public void tearDown() {

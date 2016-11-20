@@ -71,10 +71,4 @@ public class RegisterPage {
 		btn_Register.click();
 	}
 	
-//	public String getCodeDao(String mobile) throws SQLException {		
-//		return SMSDao.getCodeviaMobile(mobile);
-//	}
-	
-	
-	
 }
