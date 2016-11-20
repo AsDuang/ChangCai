@@ -74,7 +74,13 @@ public class RegisterPage {
 		btn_Register.click();
 	}
 	
+	//注册操作，涉及到数据库操作。 
 	public void registerAction(String mobile,String password) {
+		//TODO
+	}
+	
+	//验证注册是否成功，涉及到数据库操作 
+	public void verifyRegister() {
 		//TODO
 	}
 	
