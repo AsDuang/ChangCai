@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="182379" started-at="2016-11-18T09:55:51Z" finished-at="2016-11-18T09:58:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="182379" started-at="2016-11-18T09:55:51Z" finished-at="2016-11-18T09:58:53Z">
+      <class name="com.changcai.test.ForgetPwdTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="setUp" is-config="true" duration-ms="3109" started-at="2016-11-18T17:55:51Z" finished-at="2016-11-18T17:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openFpPage()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="openFpPage" is-config="true" duration-ms="245" started-at="2016-11-18T17:55:54Z" finished-at="2016-11-18T17:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFpPage -->
+        <test-method status="PASS" signature="asNormalMobile(java.lang.String)[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="asNormalMobile" duration-ms="60123" started-at="2016-11-18T17:55:54Z" data-provider="methodData" finished-at="2016-11-18T17:56:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18616250312]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asNormalMobile -->
+        <test-method status="PASS" signature="toBack()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="toBack" is-config="true" duration-ms="258" started-at="2016-11-18T17:56:55Z" finished-at="2016-11-18T17:56:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toBack -->
+        <test-method status="PASS" signature="openFpPage()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="openFpPage" is-config="true" duration-ms="242" started-at="2016-11-18T17:56:55Z" finished-at="2016-11-18T17:56:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFpPage -->
+        <test-method status="PASS" signature="notAvailableMobile(java.lang.String)[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="notAvailableMobile" duration-ms="55055" started-at="2016-11-18T17:56:55Z" data-provider="methodData" finished-at="2016-11-18T17:57:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notAvailableMobile -->
+        <test-method status="PASS" signature="toBack()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="toBack" is-config="true" duration-ms="247" started-at="2016-11-18T17:57:50Z" finished-at="2016-11-18T17:57:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toBack -->
+        <test-method status="PASS" signature="openFpPage()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="openFpPage" is-config="true" duration-ms="233" started-at="2016-11-18T17:57:50Z" finished-at="2016-11-18T17:57:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFpPage -->
+        <test-method status="PASS" signature="notExistMobile(java.lang.String)[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="notExistMobile" duration-ms="60031" started-at="2016-11-18T17:57:51Z" data-provider="methodData" finished-at="2016-11-18T17:58:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15901423883]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notExistMobile -->
+        <test-method status="PASS" signature="toBack()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="toBack" is-config="true" duration-ms="243" started-at="2016-11-18T17:58:51Z" finished-at="2016-11-18T17:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toBack -->
+        <test-method status="PASS" signature="openFpPage()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="openFpPage" is-config="true" duration-ms="237" started-at="2016-11-18T17:58:51Z" finished-at="2016-11-18T17:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFpPage -->
+        <test-method status="PASS" signature="notSamePwd()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="notSamePwd" duration-ms="0" started-at="2016-11-18T17:58:51Z" finished-at="2016-11-18T17:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notSamePwd -->
+        <test-method status="PASS" signature="toBack()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="toBack" is-config="true" duration-ms="244" started-at="2016-11-18T17:58:51Z" finished-at="2016-11-18T17:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toBack -->
+        <test-method status="PASS" signature="openFpPage()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="openFpPage" is-config="true" duration-ms="217" started-at="2016-11-18T17:58:51Z" finished-at="2016-11-18T17:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFpPage -->
+        <test-method status="PASS" signature="resetPwdSuccess()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="resetPwdSuccess" duration-ms="1" started-at="2016-11-18T17:58:52Z" finished-at="2016-11-18T17:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPwdSuccess -->
+        <test-method status="PASS" signature="toBack()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="toBack" is-config="true" duration-ms="234" started-at="2016-11-18T17:58:52Z" finished-at="2016-11-18T17:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toBack -->
+        <test-method status="PASS" signature="openFpPage()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="openFpPage" is-config="true" duration-ms="236" started-at="2016-11-18T17:58:52Z" finished-at="2016-11-18T17:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFpPage -->
+        <test-method status="FAIL" signature="wrongVerifyCode(java.lang.String)[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="wrongVerifyCode" duration-ms="322" started-at="2016-11-18T17:58:52Z" data-provider="methodData" finished-at="2016-11-18T17:58:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18616250312]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[Element must not be hidden, disabled or read-only (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 69 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: '7-PC', ip: '192.168.2.132', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:16216/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 6b3035a7-39c4-4a2f-8619-040a974d4b91]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: Element must not be hidden, disabled or read-only (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 69 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: '7-PC', ip: '192.168.2.132', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:16216/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 6b3035a7-39c4-4a2f-8619-040a974d4b91
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.clear(Unknown Source)
+	at com.changcai.test.pages.ForgetPwdPage.inputCode(ForgetPwdPage.java:56)
+	at com.changcai.test.ForgetPwdTest.wrongVerifyCode(ForgetPwdTest.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongVerifyCode -->
+        <test-method status="PASS" signature="toBack()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="toBack" is-config="true" duration-ms="236" started-at="2016-11-18T17:58:52Z" finished-at="2016-11-18T17:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toBack -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.changcai.test.ForgetPwdTest@57baeedf]" name="tearDown" is-config="true" duration-ms="839" started-at="2016-11-18T17:58:53Z" finished-at="2016-11-18T17:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.changcai.test.ForgetPwdTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
