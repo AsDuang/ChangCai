@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.changcai.test.utils.DataBaseUtil;
+import com.changcai.test.utils.MD5Util;
+
 public class RegisterPage {
 
 	private WebDriver driver;
@@ -63,7 +66,8 @@ public class RegisterPage {
 		btn_getCode.click();
 	}
 	
-	public void inputCode(String code,String password,String ensurePwd) {
+	//注册流程的页面元素操作
+	public void registerDo(String code,String password,String ensurePwd) {
 		txt_code.clear();
 		txt_code.sendKeys(code);
 		txt_password.clear();
@@ -77,11 +81,18 @@ public class RegisterPage {
 	//注册操作，涉及到数据库操作。 
 	public void registerAction(String mobile,String password) {
 		//TODO
+		String insertUser = "insert into usr_user (mobile,password) values ('"+mobile+"'"+",'"+MD5Util.getMD5String(password)+"')";
+		DataBaseUtil.insertData(insertUser);
+		
 	}
 	
 	//验证注册是否成功，涉及到数据库操作 
-	public void verifyRegister() {
+	public boolean verifyRegister(String mobile) {
 		//TODO
+		boolean b = false;
+		if(DataBaseUtil.findResults("select * from usr_user where mobile = '" + mobile + "'") != null)
+			b = true;
+		return b;
 	}
 	
 }
