@@ -35,6 +35,19 @@ public class PersonalBuyerBasisTest {
 	}
 	
 	
+	@Test
+	//已认证个人买家对基差订单 -- 确认下单--查看订单状态
+	public void createBasisviaVerifiedBuyer() {
+		//TODO
+	}
+	
+	@Test
+	//已认证个人买家对价差订单 -- 确认下单 -- 不签署合同 是订单失效，查看订单状态
+	public void createBasisviaVerifiedBuyerNotSigned() {
+		//TODO
+	}
+	
+	
 
 
 }
