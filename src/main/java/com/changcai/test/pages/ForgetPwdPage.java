@@ -1,8 +1,12 @@
 package com.changcai.test.pages;
 
+import java.sql.SQLException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
+
+import com.changcai.test.dao.SMSDao;
 
 public class ForgetPwdPage {
 	
@@ -52,8 +56,10 @@ public class ForgetPwdPage {
 		btn_submit.click();
 	}
 	
-	public void inputCode(String code) {
+	public void inputCode(String mobile) throws SQLException, InterruptedException {
 		txt_Code.clear();
+		Thread.sleep(5000);
+		String code = SMSDao.getCodeviaMobile(mobile);
 		txt_Code.sendKeys(code);
 		btn_updateSubmit.click();
 	}

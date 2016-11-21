@@ -5,8 +5,8 @@
     <classes>
       <class name="com.changcai.test.ForgetPwdTest">
         <methods>
-          <include name="wrongVerifyCode" invocation-numbers="0"/>
           <include name="openFpPage"/>
+          <include name="asNormalMobile" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="toBack"/>
           <include name="tearDown"/>

@@ -1,14 +1,19 @@
 package com.changcai.test;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.lang.reflect.Method;
 import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
-import org.testng.annotations.*;
-import static org.testng.Assert.assertEquals;
-
-import com.changcai.test.dao.SMSDao;
 import com.changcai.test.pages.ForgetPwdPage;
 import com.changcai.test.utils.DriverUtil;
 import com.changcai.test.utils.PropertiesUtil;
@@ -60,10 +65,13 @@ public class ForgetPwdTest {
 	
 	@Test(dataProvider="methodData")
 	//输入正确的手机号码
-	public void asNormalMobile(String mobile) throws InterruptedException {
+	public void asNormalMobile(String mobile) throws InterruptedException, SQLException {
 		fpp.inputMobile(mobile);
 		Thread.sleep(2000);
-		assertEquals(fpp.getStatusMsg(),"");		
+		fpp.inputCode(mobile);
+		Thread.sleep(2000);
+		System.out.println("forgetPwd.do" + driver.getCurrentUrl());
+		assertTrue(driver.getCurrentUrl().contains("forgetPwd.do"));		
 		Thread.sleep(2000);
 	}
 	
@@ -79,25 +87,20 @@ public class ForgetPwdTest {
 	@Test(dataProvider="methodData")
 	//输入了错误的验证码
 	public void wrongVerifyCode(String mobile) throws SQLException, InterruptedException {
-		String right = SMSDao.getCodeviaMobile(mobile);
-		if(!"123456".equals(right))  
-			fpp.inputCode("123456");
+		fpp.inputMobile(mobile);
 		Thread.sleep(2000);
-		assertEquals(fpp.getStatusMsg(),"请输入正确的验证码");
+		fpp.txt_Code.sendKeys("123456");
+		Thread.sleep(2000);
+		assertEquals(fpp.getStatusMsg(),"动态码输入有误，请重新输入");
 		Thread.sleep(2000);
 	}
 	
-	@Test
-	//重置密码时输入了不一样的密码
-	public void notSamePwd() {
-		//TODO
-	}
-	
-	@Test
-	//成功重置密码
-	public void resetPwdSuccess() {
-		//TODO
-	}
+//	@Test
+//	//重置密码时输入了不一样的密码
+//	public void notSamePwd() {
+//		//TODO
+//		
+//	}
 	
 	@AfterMethod
 	public void toBack() {
