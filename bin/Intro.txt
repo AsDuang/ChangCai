@@ -1,4 +1,0 @@
-Git Project Intro£º 
-1. Web-Test Project
-2. Android Project
-3. Activator-Play-Java Project
