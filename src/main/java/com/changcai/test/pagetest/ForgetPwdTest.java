@@ -1,4 +1,4 @@
-package com.changcai.test;
+package com.changcai.test.pagetest;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;

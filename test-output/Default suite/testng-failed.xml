@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.changcai.test.ForgetPwdTest">
+      <class name="com.changcai.test.pagetest.BuyDoupoDoPageTest">
         <methods>
-          <include name="openFpPage"/>
-          <include name="asNormalMobile" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="toBack"/>
+          <include name="checkPrice"/>
+          <include name="openPage"/>
+          <include name="backTo"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.changcai.test.ForgetPwdTest -->
+      </class> <!-- com.changcai.test.pagetest.BuyDoupoDoPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

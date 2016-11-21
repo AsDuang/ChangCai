@@ -34,7 +34,7 @@ public class BasisProductDetailPage {
 	public BasisProductDetailPage(WebDriver _driver,String _url) {
 		this.driver = _driver;
 		this.url = _url;
-		driver.get(url);
+		_driver.get(_url);
 		PageFactory.initElements(driver, this);		
 	}
 	
@@ -55,6 +55,8 @@ public class BasisProductDetailPage {
 	
 	@FindBy(id="depoistPrice")
 	private WebElement lab_depoistPrice;
+	
+	
 	
 	
 	public static void main(String args[]) {
