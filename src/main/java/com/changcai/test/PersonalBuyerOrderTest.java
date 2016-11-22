@@ -7,6 +7,13 @@ public class PersonalBuyerOrderTest {
 	@BeforeClass
 	public void setUp() {
 		//TODO 
+		
+	}
+	
+	@Test
+	//未登录状态下点击确认下单
+	public void createOrderviaNotLogin() {
+		
 	}
 	
 	@Test

@@ -89,7 +89,7 @@ public class ForgetPwdTest {
 	public void wrongVerifyCode(String mobile) throws SQLException, InterruptedException {
 		fpp.inputMobile(mobile);
 		Thread.sleep(2000);
-		fpp.txt_Code.sendKeys("123456");
+		fpp.inputWrongCode("123456");
 		Thread.sleep(2000);
 		assertEquals(fpp.getStatusMsg(),"动态码输入有误，请重新输入");
 		Thread.sleep(2000);

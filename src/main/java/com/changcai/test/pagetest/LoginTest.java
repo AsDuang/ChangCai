@@ -5,7 +5,9 @@ import java.lang.reflect.Method;
 import org.openqa.selenium.WebDriver;
 
 import org.testng.annotations.*;
+
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import com.changcai.test.pages.LoginPage;
 import com.changcai.test.utils.DriverUtil;
@@ -50,9 +52,10 @@ public class LoginTest {
 		System.out.println();
 		System.out.println("Login Normal mobile: " + mobile);
 		System.out.println("Login Normal pwd: " + pwd);
+
 		loginpage.loginAction(mobile, pwd);
 		Thread.sleep(2000);
-		assertEquals(driver.getTitle(),"买豆粕网 专业豆粕电商");
+		assertTrue(driver.getCurrentUrl().contains("/index"));
 	}
 	
 	@Test(dataProvider="providerMethod")

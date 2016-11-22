@@ -1,71 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5921" started-at="2016-11-21T09:29:22Z" finished-at="2016-11-21T09:29:28Z">
+  <suite name="Default suite" duration-ms="213586" started-at="2016-11-22T07:54:47Z" finished-at="2016-11-22T07:58:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5921" started-at="2016-11-21T09:29:22Z" finished-at="2016-11-21T09:29:28Z">
-      <class name="com.changcai.test.pagetest.BuyDoupoDoPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.changcai.test.pagetest.BuyDoupoDoPageTest@1794d431]" name="setUp" is-config="true" duration-ms="2894" started-at="2016-11-21T17:29:22Z" finished-at="2016-11-21T17:29:24Z">
+    <test name="Default test" duration-ms="213586" started-at="2016-11-22T07:54:47Z" finished-at="2016-11-22T07:58:20Z">
+      <class name="com.changcai.test.pagetest.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="setUp" is-config="true" duration-ms="2918" started-at="2016-11-22T15:54:47Z" finished-at="2016-11-22T15:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openPage()[pri:0, instance:com.changcai.test.pagetest.BuyDoupoDoPageTest@1794d431]" name="openPage" is-config="true" duration-ms="480" started-at="2016-11-21T17:29:24Z" finished-at="2016-11-21T17:29:25Z">
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="254" started-at="2016-11-22T15:54:50Z" finished-at="2016-11-22T15:54:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openPage -->
-        <test-method status="FAIL" signature="checkPrice()[pri:0, instance:com.changcai.test.pagetest.BuyDoupoDoPageTest@1794d431]" name="checkPrice" duration-ms="1298" started-at="2016-11-21T17:29:25Z" finished-at="2016-11-21T17:29:26Z">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[bound must be positive]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Unknown Source)
-	at com.changcai.test.pages.BuyDoupoDoPage.getPriceLi(BuyDoupoDoPage.java:62)
-	at com.changcai.test.pages.BuyDoupoDoPage.getDataRid(BuyDoupoDoPage.java:71)
-	at com.changcai.test.pagetest.BuyDoupoDoPageTest.checkPrice(BuyDoupoDoPageTest.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        </test-method> <!-- openLoginPage -->
+        <test-method status="PASS" signature="loginNormalTest(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginNormalTest" duration-ms="103534" started-at="2016-11-22T15:54:50Z" data-provider="providerMethod" finished-at="2016-11-22T15:56:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18616250312]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[changcai1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkPrice -->
-        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.BuyDoupoDoPageTest@1794d431]" name="backTo" is-config="true" duration-ms="247" started-at="2016-11-21T17:29:26Z" finished-at="2016-11-21T17:29:27Z">
+        </test-method> <!-- loginNormalTest -->
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="248" started-at="2016-11-22T15:56:33Z" finished-at="2016-11-22T15:56:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backTo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.changcai.test.pagetest.BuyDoupoDoPageTest@1794d431]" name="tearDown" is-config="true" duration-ms="989" started-at="2016-11-21T17:29:27Z" finished-at="2016-11-21T17:29:28Z">
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="245" started-at="2016-11-22T15:56:34Z" finished-at="2016-11-22T15:56:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method status="PASS" signature="loginNullInput(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginNullInput" duration-ms="1699" started-at="2016-11-22T15:56:34Z" data-provider="providerMethod" finished-at="2016-11-22T15:56:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNullInput -->
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="255" started-at="2016-11-22T15:56:36Z" finished-at="2016-11-22T15:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backTo -->
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="247" started-at="2016-11-22T15:56:36Z" finished-at="2016-11-22T15:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method status="PASS" signature="loginWrongTest(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginWrongTest" duration-ms="96774" started-at="2016-11-22T15:56:36Z" data-provider="providerMethod" finished-at="2016-11-22T15:58:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18616250312]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[changcai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWrongTest -->
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="245" started-at="2016-11-22T15:58:13Z" finished-at="2016-11-22T15:58:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backTo -->
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="246" started-at="2016-11-22T15:58:13Z" finished-at="2016-11-22T15:58:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method status="PASS" signature="toForgetPwdLink()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="toForgetPwdLink" duration-ms="2573" started-at="2016-11-22T15:58:13Z" finished-at="2016-11-22T15:58:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toForgetPwdLink -->
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="250" started-at="2016-11-22T15:58:16Z" finished-at="2016-11-22T15:58:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backTo -->
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="248" started-at="2016-11-22T15:58:16Z" finished-at="2016-11-22T15:58:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method status="PASS" signature="toRegisterLink()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="toRegisterLink" duration-ms="2640" started-at="2016-11-22T15:58:16Z" finished-at="2016-11-22T15:58:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toRegisterLink -->
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="250" started-at="2016-11-22T15:58:19Z" finished-at="2016-11-22T15:58:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backTo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="tearDown" is-config="true" duration-ms="943" started-at="2016-11-22T15:58:19Z" finished-at="2016-11-22T15:58:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.changcai.test.pagetest.BuyDoupoDoPageTest -->
+      </class> <!-- com.changcai.test.pagetest.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -63,5 +63,12 @@ public class ForgetPwdPage {
 		txt_Code.sendKeys(code);
 		btn_updateSubmit.click();
 	}
+	
+	public void inputWrongCode(String str) throws InterruptedException {
+		txt_Code.clear();
+		Thread.sleep(4000);
+		txt_Code.sendKeys(str);
+		btn_updateSubmit.click();
+	}
 
 }
