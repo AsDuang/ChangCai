@@ -8,6 +8,7 @@
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="openLoginPage"/>
+          <include name="loginWrongTest" invocation-numbers="0"/>
           <include name="loginNormalTest" invocation-numbers="0"/>
           <include name="backTo"/>
         </methods>

@@ -28,7 +28,7 @@ public class BuyDoupoDoPageTest {
 	
 	@BeforeMethod
 	public void openPage() {
-		bddp = new BuyDoupoDoPage(driver,PropertiesUtil.getSite()+"/common/buyDouPo.do");
+		bddp = new BuyDoupoDoPage(driver);
 	}
 	
 	@Test

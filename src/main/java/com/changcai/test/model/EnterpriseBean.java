@@ -2,45 +2,46 @@ package com.changcai.test.model;
 
 public class EnterpriseBean {
 //TODO 添加转义，如type类型，需设置为
-	//
+	
+	// 企业名称
 	private String name;
-	//
+	// 状态 默认No
 	private String status;
-	//
+	//是否省份正正面照片ID
 	private boolean iszhengmian;
-	//
+	//是否身份证反面照片
 	private boolean isfanmian;
-	// 
+	// 是否营业执照照片
 	private boolean isyingyezhizhao;
-	//
+	//是否税务登记证照片
 	private boolean isshuiwudengji;
-	//
+	//是否组织机构代码证照片
 	private boolean iszuzhijigou;
-	//
+	//是否有企业品牌图片
 	private boolean isqiyelogo;
-	//
+	//是否有企业公章图片
 	private boolean isqiyegongzhang;
-	//
+	// 企业管理员的UserID
 	private long admin;
-	//
+	// 企业法人姓名
 	private String owner;
-	//
+	// 企业地址
 	private String address;
-	//
-	private String congtact_phone;
-	//
+	// 联系电话
+	private String contact_phone;
+	// 企业描述
 	private String information;
-	//
+	// 联系电话-对外展示
 	private String external_phone;
-	//
+	// 银行签约状态
 	private String bank_sign_status;
-	//
+	// 买家保证金率
 	private int buyer_deposit_rate;
-	//
+	// 卖家保证金率
 	private int seller_deposit_rate;
-	//
+	// 企业会员等级你
 	private int grade;
-	//
+	// 公司类型： 个人，贸易商，油厂。
 	private String type;
 	
 	
@@ -116,11 +117,11 @@ public class EnterpriseBean {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getCongtact_phone() {
-		return congtact_phone;
+	public String getContact_phone() {
+		return contact_phone;
 	}
-	public void setCongtact_phone(String congtact_phone) {
-		this.congtact_phone = congtact_phone;
+	public void setContact_phone(String contact_phone) {
+		this.contact_phone = contact_phone;
 	}
 	public String getInformation() {
 		return information;

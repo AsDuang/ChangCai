@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="213586" started-at="2016-11-22T07:54:47Z" finished-at="2016-11-22T07:58:20Z">
+  <suite name="Default suite" duration-ms="245238" started-at="2016-11-23T03:56:22Z" finished-at="2016-11-23T04:00:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="213586" started-at="2016-11-22T07:54:47Z" finished-at="2016-11-22T07:58:20Z">
+    <test name="Default test" duration-ms="245238" started-at="2016-11-23T03:56:22Z" finished-at="2016-11-23T04:00:27Z">
       <class name="com.changcai.test.pagetest.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="setUp" is-config="true" duration-ms="2918" started-at="2016-11-22T15:54:47Z" finished-at="2016-11-22T15:54:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="setUp" is-config="true" duration-ms="3104" started-at="2016-11-23T11:56:22Z" finished-at="2016-11-23T11:56:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="254" started-at="2016-11-22T15:54:50Z" finished-at="2016-11-22T15:54:50Z">
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="259" started-at="2016-11-23T11:56:25Z" finished-at="2016-11-23T11:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLoginPage -->
-        <test-method status="PASS" signature="loginNormalTest(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginNormalTest" duration-ms="103534" started-at="2016-11-22T15:54:50Z" data-provider="providerMethod" finished-at="2016-11-22T15:56:33Z">
+        <test-method status="PASS" signature="loginNormalTest(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginNormalTest" duration-ms="134847" started-at="2016-11-23T11:56:26Z" data-provider="providerMethod" finished-at="2016-11-23T11:58:40Z">
           <params>
             <param index="0">
               <value>
@@ -31,15 +31,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNormalTest -->
-        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="248" started-at="2016-11-22T15:56:33Z" finished-at="2016-11-22T15:56:34Z">
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="288" started-at="2016-11-23T11:58:40Z" finished-at="2016-11-23T11:58:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backTo -->
-        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="245" started-at="2016-11-22T15:56:34Z" finished-at="2016-11-22T15:56:34Z">
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="250" started-at="2016-11-23T11:58:41Z" finished-at="2016-11-23T11:58:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLoginPage -->
-        <test-method status="PASS" signature="loginNullInput(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginNullInput" duration-ms="1699" started-at="2016-11-22T15:56:34Z" data-provider="providerMethod" finished-at="2016-11-22T15:56:36Z">
+        <test-method status="PASS" signature="loginNullInput(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginNullInput" duration-ms="1633" started-at="2016-11-23T11:58:41Z" data-provider="providerMethod" finished-at="2016-11-23T11:58:43Z">
           <params>
             <param index="0">
               <value>
@@ -55,15 +55,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNullInput -->
-        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="255" started-at="2016-11-22T15:56:36Z" finished-at="2016-11-22T15:56:36Z">
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="258" started-at="2016-11-23T11:58:43Z" finished-at="2016-11-23T11:58:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backTo -->
-        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="247" started-at="2016-11-22T15:56:36Z" finished-at="2016-11-22T15:56:36Z">
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="243" started-at="2016-11-23T11:58:43Z" finished-at="2016-11-23T11:58:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLoginPage -->
-        <test-method status="PASS" signature="loginWrongTest(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginWrongTest" duration-ms="96774" started-at="2016-11-22T15:56:36Z" data-provider="providerMethod" finished-at="2016-11-22T15:58:13Z">
+        <test-method status="PASS" signature="loginWrongTest(java.lang.String, java.lang.String)[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="loginWrongTest" duration-ms="96758" started-at="2016-11-23T11:58:43Z" data-provider="providerMethod" finished-at="2016-11-23T12:00:20Z">
           <params>
             <param index="0">
               <value>
@@ -79,35 +79,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWrongTest -->
-        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="245" started-at="2016-11-22T15:58:13Z" finished-at="2016-11-22T15:58:13Z">
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="254" started-at="2016-11-23T12:00:20Z" finished-at="2016-11-23T12:00:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backTo -->
-        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="246" started-at="2016-11-22T15:58:13Z" finished-at="2016-11-22T15:58:13Z">
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="249" started-at="2016-11-23T12:00:20Z" finished-at="2016-11-23T12:00:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLoginPage -->
-        <test-method status="PASS" signature="toForgetPwdLink()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="toForgetPwdLink" duration-ms="2573" started-at="2016-11-22T15:58:13Z" finished-at="2016-11-22T15:58:16Z">
+        <test-method status="PASS" signature="toForgetPwdLink()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="toForgetPwdLink" duration-ms="2579" started-at="2016-11-23T12:00:20Z" finished-at="2016-11-23T12:00:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toForgetPwdLink -->
-        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="250" started-at="2016-11-22T15:58:16Z" finished-at="2016-11-22T15:58:16Z">
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="262" started-at="2016-11-23T12:00:23Z" finished-at="2016-11-23T12:00:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backTo -->
-        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="248" started-at="2016-11-22T15:58:16Z" finished-at="2016-11-22T15:58:16Z">
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="openLoginPage" is-config="true" duration-ms="254" started-at="2016-11-23T12:00:23Z" finished-at="2016-11-23T12:00:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLoginPage -->
-        <test-method status="PASS" signature="toRegisterLink()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="toRegisterLink" duration-ms="2640" started-at="2016-11-22T15:58:16Z" finished-at="2016-11-22T15:58:19Z">
+        <test-method status="PASS" signature="toRegisterLink()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="toRegisterLink" duration-ms="2667" started-at="2016-11-23T12:00:23Z" finished-at="2016-11-23T12:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toRegisterLink -->
-        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="250" started-at="2016-11-22T15:58:19Z" finished-at="2016-11-22T15:58:19Z">
+        <test-method status="PASS" signature="backTo()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="backTo" is-config="true" duration-ms="261" started-at="2016-11-23T12:00:26Z" finished-at="2016-11-23T12:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backTo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="tearDown" is-config="true" duration-ms="943" started-at="2016-11-22T15:58:19Z" finished-at="2016-11-22T15:58:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.changcai.test.pagetest.LoginTest@57baeedf]" name="tearDown" is-config="true" duration-ms="1049" started-at="2016-11-23T12:00:26Z" finished-at="2016-11-23T12:00:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

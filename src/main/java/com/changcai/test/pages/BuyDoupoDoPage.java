@@ -41,7 +41,7 @@ public class BuyDoupoDoPage {
 		this.url = url;
 	}
 	
-	public BuyDoupoDoPage(WebDriver driver, String url) {
+	public BuyDoupoDoPage(WebDriver driver) {
 		this.driver = driver;
 		this.setUrl(PropertiesUtil.getSite()+"/common/buyDouPo.do");
 		driver.get(url);
@@ -50,7 +50,7 @@ public class BuyDoupoDoPage {
 	
 
 	//获取所有产品报价
-	@FindBys({@FindBy(xpath="/html/body/div[2]/div[1]/div/div[11]/div/ul"),@FindBy(tagName="li")})
+	@FindBys({@FindBy(css="html body div.proListMain div.screeningBox div.container div.productList div.container ul.clearfix.priceUl"),@FindBy(tagName="li")})
 	private List<WebElement> ul_priceUL;
 	
 	
@@ -94,7 +94,7 @@ public class BuyDoupoDoPage {
 	
 	//验证当前报价是基差报价还是一口价报价
 	public String checkProductPriceType(WebElement li) throws SQLException {
-		//TODO 检查当前的LI报价是基差报价还是一口价报价
+		// 检查当前的LI报价是基差报价还是一口价报价
 		return ProdPriceDao.findTypeviaPID(this.getDataRid(li));		
 	}
 	
@@ -131,7 +131,7 @@ public class BuyDoupoDoPage {
 	
 	public static void main(String args[]) throws SQLException, InterruptedException {
 		WebDriver driver = DriverUtil.setUpIEDriver();
-		BuyDoupoDoPage buy = new BuyDoupoDoPage(driver,"http://prd.maidoupo.com/common/buyDouPo.do");
+		BuyDoupoDoPage buy = new BuyDoupoDoPage(driver);
 //		for(WebElement e: buy.product_Prices) {
 //			System.out.println("product_Prices: " + e.getTagName() + ": " + e.getText());
 //		}

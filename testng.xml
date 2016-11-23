@@ -3,8 +3,11 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.changcai.test.web_test.OpenHomePage"/>
-      <class name="com.changcai.test.web_test.AppTest"/>
+      <class name="com.changcai.test.pagetest.HomePageLinkTest"/>
+      <class name="com.changcai.test.pagetest.RegisterTest"/>
+      <class name="com.changcai.test.pagetest.ForgetPwdTest.java"/>
+      <class name="com.changcai.test.pagetest.RegisterTest"/>
+      <class name="com.changcai.test.pagetest.BuyDoupoDoPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

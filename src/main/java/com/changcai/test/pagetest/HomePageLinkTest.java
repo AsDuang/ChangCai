@@ -24,7 +24,7 @@ public class HomePageLinkTest {
 	
 	@BeforeMethod
 	public void openHome() {
-		home = new HomePage(driver,PropertiesUtil.getSite());
+		home = new HomePage(driver);
 		System.out.println("setUp: " + driver.getCurrentUrl());
 	}
 	

@@ -3,11 +3,12 @@ package com.changcai.test.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import com.changcai.test.utils.DriverUtil;
 
-public class BasisProductDetailPage {
+public class ProductDetailPage {
 
 	/*
 	 * 构造方法
@@ -31,7 +32,7 @@ public class BasisProductDetailPage {
 		this.url = url;
 	}
 	
-	public BasisProductDetailPage(WebDriver _driver,String _url) {
+	public ProductDetailPage(WebDriver _driver,String _url) {
 		this.driver = _driver;
 		this.url = _url;
 		_driver.get(_url);
@@ -44,7 +45,7 @@ public class BasisProductDetailPage {
 	@FindBy(id="numsBoxInput")
 	private WebElement in_NumsBox;
 	
-	@FindBy(xpath="/html/body/div[2]/div[1]/div/div/div[1]/div[4]/span")
+	@FindBys({@FindBy(className="seller"),@FindBy(tagName="span")})
 	private WebElement lab_sellerName;
 	
 	@FindBy(id="inventoryQuality")
@@ -56,16 +57,34 @@ public class BasisProductDetailPage {
 	@FindBy(id="depoistPrice")
 	private WebElement lab_depoistPrice;
 	
+	@FindBy(id="createOrderBtn")
+	private WebElement btn_CreateOrder;
+	
+	public String getInNums() {
+		return in_NumsBox.getAttribute("value");
+	}
+	
+	public void setInNums(String i) {
+		in_NumsBox.clear();
+		in_NumsBox.sendKeys(i);
+	}
 	
 	
 	
-	public static void main(String args[]) {
+	
+	public static void main(String args[]) throws InterruptedException {
 		WebDriver driver = DriverUtil.setUpIEDriver();
-		BasisProductDetailPage detail = new BasisProductDetailPage(driver,"http://prd.maidoupo.com/product/1486");
+		ProductDetailPage detail = new ProductDetailPage(driver,"http://prd.maidoupo.com/product/1500");
 		System.out.println("Quality: "+ detail.lab_Quality.getText());
 		System.out.println("SellerName: "+ detail.lab_sellerName.getText());
 		System.out.println("MinPurchase: "+ detail.lab_MinPurchase.getText());
 		System.out.println("DepoistPrice: "+ detail.lab_depoistPrice.getText());
+		System.out.println("Input Num： " + detail.getInNums());
+		Thread.sleep(5000);
+		detail.setInNums("15");
+		Thread.sleep(5000);
+		System.out.println("Input Num： " + detail.getInNums());
+		Thread.sleep(5000);
 		driver.quit();
 	}
 	

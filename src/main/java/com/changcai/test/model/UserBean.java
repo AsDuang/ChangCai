@@ -2,6 +2,8 @@ package com.changcai.test.model;
 
 public class UserBean {
 	
+	//用户在用户表的ID。
+	private long id;
 	//用户账号
 	private String account;
 	//用户密码，经过MD5加密
@@ -29,7 +31,12 @@ public class UserBean {
 	//会员等级
 	private int rank;
 	
-	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
 	public String getAccount() {
 		return account;
 	}

@@ -4,15 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
+import com.changcai.test.utils.PropertiesUtil;
+
 public class HomePage {
 	
 	private WebDriver driver;
-	private String url;
-
-
-	public String getUrl() {
-		return url;
-	}
 
 	@FindBy(linkText="登录")
 	public WebElement loginLink;
@@ -56,19 +52,14 @@ public class HomePage {
 		newerLink.click();
 	}
 	
-	public HomePage(WebDriver driver,String url) {
+	public HomePage(WebDriver driver) {
 		this.driver = driver;
-		this.url = url;
-		driver.get(url);
+		driver.get(PropertiesUtil.getSite());
 		PageFactory.initElements(driver, this);		
 	}
 
 	public WebDriver getDriver() {
 		return driver;
-	}
-		
-	public void setUrl(String url) {
-		this.url = url;
 	}
 	
 }

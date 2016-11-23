@@ -12,6 +12,7 @@ import static org.testng.Assert.assertTrue;
 import com.changcai.test.pages.LoginPage;
 import com.changcai.test.utils.DriverUtil;
 import com.changcai.test.utils.PropertiesUtil;
+import com.changcai.test.utils.WebElementUtil;
 
 public class LoginTest {
 	
@@ -53,8 +54,10 @@ public class LoginTest {
 		System.out.println("Login Normal mobile: " + mobile);
 		System.out.println("Login Normal pwd: " + pwd);
 
+
 		loginpage.loginAction(mobile, pwd);
-		Thread.sleep(2000);
+		Thread.sleep(30000);
+		System.out.println("user ID： " + WebElementUtil.getHiddenElement(driver, "var input = document.getElementById(\"userId\").value;return input;"));
 		assertTrue(driver.getCurrentUrl().contains("/index"));
 	}
 	
@@ -97,8 +100,27 @@ public class LoginTest {
 	public void tearDown() {
 		driver.quit();
 	}
-	
-
-	
 
 }
+
+
+
+/*
+* Login Normal mobile: 18616250312
+* Login Normal pwd: changcai1
+* user ID： 332
+* Null mobile: 
+* Null pwd: 
+* Wrong Pwd mobile: 18616250312
+* Wrong Pwd pwd: changcai
+* 	
+* PASSED: loginNormalTest("18616250312", "changcai1")
+* PASSED: loginNullInput("", "")
+* PASSED: loginWrongTest("18616250312", "changcai")
+* PASSED: toForgetPwdLink
+* PASSED: toRegisterLink
+* 
+*/
+
+
+
