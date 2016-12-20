@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.changcai.test.pages.HomePage;
 import com.changcai.test.utils.DriverUtil;
-import com.changcai.test.utils.PropertiesUtil;
 
 
 

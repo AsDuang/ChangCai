@@ -13,7 +13,6 @@ import java.sql.SQLException;
 
 import com.changcai.test.pages.BuyDoupoDoPage;
 import com.changcai.test.utils.DriverUtil;
-import com.changcai.test.utils.PropertiesUtil;
 
 public class BuyDoupoDoPageTest {
 	

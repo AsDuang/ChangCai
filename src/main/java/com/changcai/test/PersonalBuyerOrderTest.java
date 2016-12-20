@@ -6,9 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 import com.changcai.test.pages.BuyDoupoDoPage;
-import com.changcai.test.pages.HomePage;
-import com.changcai.test.pages.LoginPage;
-import com.changcai.test.pages.ProductDetailPage;
 import com.changcai.test.services.UserServices;
 import com.changcai.test.utils.DriverUtil;
 
@@ -20,7 +17,6 @@ public class PersonalBuyerOrderTest {
 	
 	private WebDriver driver;
 	private BuyDoupoDoPage bddp;
-	private ProductDetailPage pdp;
 	
 	@BeforeClass
 	public void setUp() {
