@@ -21,7 +21,7 @@ public class PersonalBuyerOrderTest {
 	@BeforeClass
 	public void setUp() {
 		//TODO 
-		driver = DriverUtil.setUpIEDriver();
+		driver = DriverUtil.setUpEdgeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		bddp = new BuyDoupoDoPage(driver);

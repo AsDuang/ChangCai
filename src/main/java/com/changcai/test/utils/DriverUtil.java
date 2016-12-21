@@ -1,17 +1,32 @@
 package com.changcai.test.utils;
 
-//import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+/**
+ * Deal, Test OK. 
+ * Starting ChromeDriver 2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30) on port 39236
+ * 
+ */
 
-//import com.changcai.test.pages.HomePage;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverUtil {
 	
 	static {
-		System.setProperty("webdriver.ie.driver", "D:\\WebDrivers\\IEDriverServer.exe");		
+		System.setProperty("webdriver.edge.driver", ".\\src\\res\\drivers\\MicrosoftWebDriver.exe");	
+		System.setProperty("webdriver.gecko.driver", ".\\src\\res\\drivers\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver",".\\src\\res\\drivers\\chromedriver.exe");
 	}
-	public static InternetExplorerDriver setUpIEDriver() {
-		return new InternetExplorerDriver();		
+	public static EdgeDriver setUpEdgeDriver() {
+		return new EdgeDriver();		
+	}
+	
+	public static FirefoxDriver setUpFirefoxDriver() {
+		return new FirefoxDriver();
+	}
+	
+	public static ChromeDriver setUpChromeDriver() {
+		return new ChromeDriver();
 	}
 
 }

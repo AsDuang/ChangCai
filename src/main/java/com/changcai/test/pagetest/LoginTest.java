@@ -39,7 +39,7 @@ public class LoginTest {
 	
 	@BeforeClass
 	public void setUp() {
-		driver = DriverUtil.setUpIEDriver();
+		driver = DriverUtil.setUpEdgeDriver();
 		driver.manage().window().maximize();
 	}
 	
