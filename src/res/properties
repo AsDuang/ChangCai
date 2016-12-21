@@ -6,13 +6,13 @@
 ChromeDriver	E:\\ChangCaiPlaza\\CCEclipse\\webdrivers\\chromedriver.exe
 #
 # absolute address of EdgeDriver
-EdgeDriver	E:\\ChangCaiPlaza\\CCEclipse\\webdrivers\\MicrosoftWebDriver.exe
+#EdgeDriver	..\\drivers\\MicrosoftWebDriver.exe
 #
 # absolute address of FirefoxDriver
-FirefoxDriver	E:\\ChangCaiPlaza\\CCEclipse\\webdrivers\\geckodriver.exe
+#FirefoxDriver	E:\\ChangCaiPlaza\\CCEclipse\\webdrivers\\geckodriver.exe
 #
 # absolute address of IEDriver
-IEDriver	E:\\ChangCaiPlaza\\CCEclipse\\webdrivers\\IEDriverServer.exe
+#IEDriver	..\\drivers\\IEDriverServer.exe
 #
 # test web site address: like "http(s)://"
 #

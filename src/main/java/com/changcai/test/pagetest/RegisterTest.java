@@ -43,7 +43,7 @@ public class RegisterTest {
 	
 	@BeforeClass
 	public void setUp() {
-		driver = DriverUtil.setUpIEDriver();
+		driver = DriverUtil.setUpEdgeDriver();
 		driver.manage().window().maximize();
 	}
 	

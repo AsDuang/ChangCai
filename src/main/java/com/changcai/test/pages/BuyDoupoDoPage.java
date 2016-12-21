@@ -130,7 +130,7 @@ public class BuyDoupoDoPage {
 
 	
 	public static void main(String args[]) throws SQLException, InterruptedException {
-		WebDriver driver = DriverUtil.setUpIEDriver();
+		WebDriver driver = DriverUtil.setUpEdgeDriver();
 		BuyDoupoDoPage buy = new BuyDoupoDoPage(driver);
 //		for(WebElement e: buy.product_Prices) {
 //			System.out.println("product_Prices: " + e.getTagName() + ": " + e.getText());

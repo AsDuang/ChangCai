@@ -73,7 +73,7 @@ public class ProductDetailPage {
 	
 	
 	public static void main(String args[]) throws InterruptedException {
-		WebDriver driver = DriverUtil.setUpIEDriver();
+		WebDriver driver = DriverUtil.setUpEdgeDriver();
 		ProductDetailPage detail = new ProductDetailPage(driver,"http://prd.maidoupo.com/product/1500");
 		System.out.println("Quality: "+ detail.lab_Quality.getText());
 		System.out.println("SellerName: "+ detail.lab_sellerName.getText());
